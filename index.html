@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sandeep Kumar - Salesforce Developer Portfolio | Lightning Web Components, Apex, Java, Python | One Piece Themed">
+    <title>Sandeep Kumar | Salesforce Developer ⚓</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@300;400;500;600;700;800;900&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">☠️</span>
+                <span class="logo-text">SANDEEP<span class="logo-dot">.</span></span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Voyage</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Devil Fruits</a></li>
+                <li><a href="#experience" class="nav-link">Log Book</a></li>
+                <li><a href="#projects" class="nav-link">Treasures</a></li>
+                <li><a href="#certifications" class="nav-link">Bounties</a></li>
+                <li><a href="#contact" class="nav-link">Den Den Mushi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-waves">
+                <svg class="wave wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                    preserveAspectRatio="none">
+                    <path fill="rgba(20,60,120,0.3)"
+                        d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,218.7C672,235,768,245,864,234.7C960,224,1056,192,1152,186.7C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+                <svg class="wave wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                    preserveAspectRatio="none">
+                    <path fill="rgba(10,40,90,0.4)"
+                        d="M0,288L48,272C96,256,192,224,288,213.3C384,203,480,213,576,229.3C672,245,768,267,864,261.3C960,256,1056,224,1152,208C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="1200">
+                    <p class="hero-greeting">Yo! I'm</p>
+                    <h1 class="hero-name">SANDEEP<br><span class="hero-name-accent">KUMAR</span></h1>
+                    <div class="hero-title-wrapper">
+                        <span class="hero-title-line"></span>
+                        <p class="hero-title">Salesforce Developer</p>
+                    </div>
+                    <p class="hero-desc">Navigating the Grand Line of Salesforce development with 2+ years of
+                        experience. Building powerful CRM solutions like a true pirate king! ⚡</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>📞</span> Contact Me
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span>🗺️</span> View Treasures
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="2">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Years Sailing</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Scroll to Explore</span>
+            </div>
+        </section>
+
+
+
+        <!-- Quotes Section -->
+        <section class="quotes-section">
+            <div class="quotes-container">
+                <div class="quote-card active" id="quote-0">
+                    <div class="quote-icon">⚓</div>
+                    <blockquote>"I don't want to conquer anything. I just think the guy with the most freedom in this
+                        whole ocean... is the Pirate King!"</blockquote>
+                    <cite>— Monkey D. Luffy</cite>
+                </div>
+                <div class="quote-card" id="quote-1">
+                    <div class="quote-icon">⚔️</div>
+                    <blockquote>"When do you think people die? When they are forgotten."</blockquote>
+                    <cite>— Dr. Hiluluk</cite>
+                </div>
+                <div class="quote-card" id="quote-2">
+                    <div class="quote-icon">🏴‍☠️</div>
+                    <blockquote>"If you don't take risks, you can't create a future."</blockquote>
+                    <cite>— Monkey D. Luffy</cite>
+                </div>
+            </div>
+            <div class="quote-dots">
+                <button class="quote-dot active" data-index="0"></button>
+                <button class="quote-dot" data-index="1"></button>
+                <button class="quote-dot" data-index="2"></button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">⚓ ABOUT ME</span>
+                    <h2 class="section-title">The Captain's Story</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="about-img-wrapper">
+                            <img src="./images/sandeep-cutout1.png" alt="Sandeep Kumar">
+                        </div>
+                    </div>
+                    <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+                        <h3>Ahoy! I'm <span class="text-accent">Sandeep Kumar</span></h3>
+                        <p class="about-desc">
+                            Results-driven Salesforce Developer with <strong>2 years of experience</strong> designing
+                            and implementing scalable CRM solutions for enterprise clients. Like a pirate navigating the
+                            Grand Line, I chart my course through complex business requirements and transform them into
+                            powerful technical solutions.
+                        </p>
+                        <p class="about-desc">
+                            Proven expertise in <strong>Lightning Web Components (LWC), Apex, Flows, and automation
+                                tools</strong> to optimize business processes and enhance user experience. Certified in
+                            <strong>Salesforce Data Cloud Consultant, AI Specialist, and AI Associate</strong> with
+                            strong foundation in Java and Python.
+                        </p>
+                        <div class="about-info-grid">
+                            <div class="about-info-item">
+                                <span class="info-label">📍 Location:</span>
+                                <span class="info-value">Hyderabad, India</span>
+                            </div>
+                            <div class="about-info-item">
+                                <span class="info-label">🎓 Education:</span>
+                                <span class="info-value">B.Tech, SVCE Tirupati</span>
+                            </div>
+                            <div class="about-info-item">
+                                <span class="info-label">💼 Company:</span>
+                                <span class="info-value">Fingertip Technologies</span>
+                            </div>
+                            <div class="about-info-item">
+                                <span class="info-label">🌊 Journey:</span>
+                                <span class="info-value">2+ Years Sailing</span>
+                            </div>
+                        </div>
+                        <div class="about-cards-row">
+                            <div class="mini-card">
+                                <div class="mini-card-icon">☁️</div>
+                                <h4>CRM Architecture</h4>
+                                <p>Designing scalable Salesforce solutions</p>
+                            </div>
+                            <div class="mini-card">
+                                <div class="mini-card-icon">⚡</div>
+                                <h4>Automation</h4>
+                                <p>Flows, Triggers & Process Builder</p>
+                            </div>
+                            <div class="mini-card">
+                                <div class="mini-card-icon">🔗</div>
+                                <h4>Integration</h4>
+                                <p>REST/SOAP APIs & Data Sync</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section (Devil Fruits) -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">🍎 DEVIL FRUITS</span>
+                    <h2 class="section-title">Powers & Abilities</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Salesforce Skills -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-category-header">
+                            <div class="skill-icon">☁️</div>
+                            <h3>Salesforce</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Lightning Web Components</span>
+                            <span class="skill-tag">Apex</span>
+                            <span class="skill-tag">Visualforce</span>
+                            <span class="skill-tag">Aura Components</span>
+                            <span class="skill-tag">Salesforce Flows</span>
+                            <span class="skill-tag">Process Builder</span>
+                            <span class="skill-tag">Triggers</span>
+                            <span class="skill-tag">SOQL / SOSL</span>
+                            <span class="skill-tag">REST/SOAP APIs</span>
+                            <span class="skill-tag">Data Cloud</span>
+                        </div>
+                    </div>
+
+                    <!-- Programming Languages -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-category-header">
+                            <div class="skill-icon">💻</div>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                        </div>
+                        <div class="skill-bars">
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-info"><span>Java</span><span>85%</span></div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-info"><span>Python</span><span>80%</span></div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-info"><span>JavaScript</span><span>90%</span></div>
+                                <div class="skill-bar-track">
+                                    <div class="skill-bar-fill" data-width="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dev Tools -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-category-header">
+                            <div class="skill-icon">🛠️</div>
+                            <h3>Dev Tools</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Salesforce CLI</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Workbench</span>
+                            <span class="skill-tag">Developer Console</span>
+                        </div>
+                    </div>
+
+                    <!-- Methodologies -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-category-header">
+                            <div class="skill-icon">📋</div>
+                            <h3>Methodologies</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">Scrum</span>
+                            <span class="skill-tag">TDD</span>
+                            <span class="skill-tag">CI/CD</span>
+                        </div>
+                    </div>
+
+                    <!-- Core Competencies -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                        <div class="skill-category-header">
+                            <div class="skill-icon">🎯</div>
+                            <h3>Core Powers</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">CRM Architecture</span>
+                            <span class="skill-tag">System Integration</span>
+                            <span class="skill-tag">Data Migration</span>
+                            <span class="skill-tag">Automation</span>
+                            <span class="skill-tag">Performance Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section (Captain's Log) -->
+        <section id="experience" class="experience-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">📜 CAPTAIN'S LOG</span>
+                    <h2 class="section-title">Professional Voyage</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-item" data-aos="fade-right" data-aos-duration="800">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge">Jan 2024 – Present</div>
+                            <h3>Salesforce Developer</h3>
+                            <h4>Fingertip Technologies, Bengaluru</h4>
+                            <ul class="timeline-list">
+                                <li>Architected and deployed Lightning Web Components for Real Estate CRM platform,
+                                    improving data entry efficiency by <strong>40%</strong></li>
+                                <li>Developed custom data upload component enabling bulk data processing, eliminating
+                                    manual entry for <strong>500+ daily records</strong></li>
+                                <li>Implemented complex Apex triggers automating lead scoring & opportunity management,
+                                    resulting in <strong>30% faster</strong> sales cycle closure</li>
+                                <li>Designed and integrated REST APIs for seamless data synchronization between
+                                    Salesforce and third-party applications</li>
+                                <li>Built reusable LWC library, accelerating development cycles by <strong>25%</strong>
+                                </li>
+                                <li>Optimized SOQL queries and batch processing, reducing system response time by
+                                    <strong>35%</strong></li>
+                                <li>Maintained <strong>90% code coverage</strong> through comprehensive unit testing
+                                </li>
+                                <li>Mentored junior developers on LWC architecture and Apex design patterns</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-left" data-aos-duration="800">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge">2019 – 2023</div>
+                            <h3>Bachelor of Technology</h3>
+                            <h4>Sri Venkateswara College of Engineering, Tirupati</h4>
+                            <p class="timeline-desc">Built a strong foundation in computer science, programming, and
+                                software development during this voyage of learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parallax Divider -->
+        <section class="parallax-divider">
+            <div class="parallax-overlay"></div>
+            <div class="parallax-content" data-aos="zoom-in">
+                <h2>— present motto —</h2>
+                <h3>To Create, Design & Deliver<br>Real Experiences</h3>
+                <div class="jolly-roger">☠️</div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Treasures) -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">🗺️ TREASURES</span>
+                    <h2 class="section-title">Key Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-card-header">
+                            <div class="project-icon">🏠</div>
+                            <div class="project-number">01</div>
+                        </div>
+                        <h3>Real Estate CRM Platform</h3>
+                        <p>Led end-to-end implementation of custom CRM solution for real estate operations, managing
+                            property listings, client interactions, and transaction workflows.</p>
+                        <ul class="project-highlights">
+                            <li>Lightning components for property search, scheduling & dashboards</li>
+                            <li>Automated email notifications & task assignments using Flows</li>
+                            <li>Reduced manual coordination by <strong>50%</strong></li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>LWC</span><span>Apex</span><span>Flows</span><span>REST API</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-card-header">
+                            <div class="project-icon">📤</div>
+                            <div class="project-number">02</div>
+                        </div>
+                        <h3>Custom Data Upload Solution</h3>
+                        <p>Engineered sophisticated bulk data upload component with field mapping, validation rules, and
+                            error handling.</p>
+                        <ul class="project-highlights">
+                            <li>CSV/Excel parsing with real-time progress tracking</li>
+                            <li>Rollback mechanisms for data integrity</li>
+                            <li>Achieved <strong>99.5% data accuracy</strong> through validation logic</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>LWC</span><span>Apex</span><span>Batch Processing</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-card-header">
+                            <div class="project-icon">🏢</div>
+                            <div class="project-number">03</div>
+                        </div>
+                        <h3>Cammary & Elite CRM Solutions</h3>
+                        <p>Customized Salesforce environments to meet specific business requirements for multiple client
+                            implementations.</p>
+                        <ul class="project-highlights">
+                            <li>Custom objects, fields, page layouts & automation rules</li>
+                            <li>Comprehensive documentation & user training</li>
+                            <li>Smooth system adoption across organizations</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Salesforce Admin</span><span>LWC</span><span>Apex</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section (Bounties) -->
+        <section id="certifications" class="certifications-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">💰 BOUNTIES</span>
+                    <h2 class="section-title">Certifications Earned</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="certs-grid">
+                    <div class="cert-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="cert-emblem">
+                            <div class="cert-emblem-inner">☁️</div>
+                        </div>
+                        <h3>Salesforce Data Cloud Consultant</h3>
+                        <p>Expert in Data Cloud implementations and customer data platform solutions</p>
+                        <div class="cert-badge">CERTIFIED</div>
+                    </div>
+
+                    <div class="cert-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="cert-emblem">
+                            <div class="cert-emblem-inner">🤖</div>
+                        </div>
+                        <h3>Salesforce AI Specialist</h3>
+                        <p>Specialist in AI-integrated Salesforce solutions and Einstein capabilities</p>
+                        <div class="cert-badge">CERTIFIED</div>
+                    </div>
+
+                    <div class="cert-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="cert-emblem">
+                            <div class="cert-emblem-inner">🧠</div>
+                        </div>
+                        <h3>Salesforce AI Associate</h3>
+                        <p>Foundation in AI concepts and their application within the Salesforce ecosystem</p>
+                        <div class="cert-badge">CERTIFIED</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (Den Den Mushi) -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">📞 DEN DEN MUSHI</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">Ready to set sail on your next project? Drop me a message through the
+                        Den Den Mushi!</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">📧</div>
+                            <h4>Drop a Line</h4>
+                            <a href="mailto:sandeepsandy9471@gmail.com">sandeepsandy9471@gmail.com</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">📱</div>
+                            <h4>Call Me</h4>
+                            <a href="tel:+916303274177">+91 6303274177</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">📍</div>
+                            <h4>Find Me</h4>
+                            <p>Hyderabad, Telangana, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper" data-aos="fade-left">
+                        <form id="contactForm" class="contact-form"
+                            action="https://formsubmit.co/sandeepsandy9471@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="New Portfolio Contact!">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Monkey D. Luffy" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="luffy@grandline.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Tell me about your adventure..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>🏴‍☠️</span> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-waves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path fill="rgba(8,20,40,1)"
+                    d="M0,64L60,69.3C120,75,240,85,360,80C480,75,600,53,720,48C840,43,960,53,1080,58.7C1200,64,1320,64,1380,64L1440,64L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z">
+                </path>
+            </svg>
+        </div>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3><span class="logo-icon">☠️</span> SANDEEP KUMAR</h3>
+                    <p>Salesforce Developer | Navigating the Grand Line of Code</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Voyage</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow the Crew</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/sadeep-sandy" target="_blank" class="social-link" title="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sandeep-kumar" target="_blank" class="social-link"
+                            title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/sa.ndeep9677" target="_blank" class="social-link"
+                            title="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/@xsandy5681" target="_blank" class="social-link" title="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 – 2026 Sandeep Kumar. All Rights Reserved. | Built with the spirit of a Pirate King 🏴‍☠️</p>
+                <p class="footer-email">
+                    <a href="mailto:sandeepsandy9471@gmail.com">sandeepsandy9471@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+    </button>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
